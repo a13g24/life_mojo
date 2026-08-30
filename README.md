@@ -1,5 +1,9 @@
 # README 
 
+This project uses [Pixi](https://pixi.prefix.dev/latest/installation/). See that link on how to install it.
+
+Run `pixi shell` to activate the environment. Then run `pixi install` to install the project's dependencies.
+
 Implements Conway's Game of Life in mojo.
 
 Conway's rules
@@ -13,4 +17,4 @@ Conway's rules
 
 ## Run
 
-To run the app, first init the env `pixi shell` then run `mojo life.mojo`
+To run the app, first init the env `pixi shell` if you haven't already, then run `mojo life.mojo`
