@@ -1,16 +1,13 @@
 from gridv1 import Grid
 
-def main():
-    var glider: List[List[Int]] = [
-        [0, 1, 0, 0, 0, 0, 0, 0],
-        [0, 0, 1, 0, 0, 0, 0, 0],
-        [1, 1, 1, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0],
-    ]
+def run_display(var grid: Grid) raises -> None:
+    while True:
+        print(String(grid))
+        print()
+        if input("Enter 'q' to quit or press <Enter> to continue: ") == "q":
+            break
+        grid = grid.evolve()
 
-    var start = Grid(8, 8, glider^)
-    print(start.grid_str())
+def main() raises:
+    var start = Grid.random(8, 8)
+    run_display(start^)
